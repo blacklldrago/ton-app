@@ -23,15 +23,14 @@ const TransactionScreen = () => {
       return;
     }
 
-    // Simulate transaction success
     setNotification(`Transaction of ${parsedAmount} TON to ${recipient} was successful!`);
-    setBalance(balance - parsedAmount); // Deduct the amount from the balance
+    setBalance(balance - parsedAmount); 
     setAmount('');
     setRecipient('');
   };
 
   return (
-    <div className="p-4 mt-[100px] max-w-sm mx-auto bg-white shadow-md rounded-lg">
+    <div className="p-4 mt-[100px] w-[30%] m-auto mx-auto bg-white shadow-md rounded-lg">
       <div className="flex justify-between items-center mb-4">
         <button onClick={() => router.back()} className="text-blue-500">Back</button>
         <p className="font-bold">Balance: {balance} TON</p>

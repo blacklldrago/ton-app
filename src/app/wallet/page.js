@@ -48,7 +48,7 @@ const WalletScreen = () => {
   };
 
   return (
-    <div className="p-4 mt-[100px] max-w-sm mx-auto bg-white shadow-md rounded-lg">
+    <div className="p-4 mt-[100px] w-[30%] m-auto  mx-auto bg-white shadow-md rounded-lg">
       <div className="flex justify-between items-center mb-4">
         <button
           className="px-4 py-2 bg-blue-500 text-white rounded"
@@ -64,6 +64,7 @@ const WalletScreen = () => {
           <p className="mt-4">Wallet Address: {walletAddress}</p>
         </>
       )}
+    
     </div>
   );
 };
